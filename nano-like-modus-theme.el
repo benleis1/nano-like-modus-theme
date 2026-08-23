@@ -1,15 +1,25 @@
-;;; nano-like-theme.el --- Modus derivative styled after nano-emacs -*- lexical-binding: t; -*-
+;; -*- lexical-binding: t; -*-
 
-;; This theme is built on top of Modus Themes via `modus-themes-theme',
-;; using `modus-themes-generate-palette' to derive a full Modus-compatible
+;; This theme is built on top of Modus Themes via `modus-themes-theme`,
+;; using modus-themes-generate-palette to derive a full Modus-compatible
 ;; palette from the colors used by the light ("Material") variant of
 ;; rougier/nano-emacs (https://github.com/rougier/nano-emacs), as defined
-;; in that project's `nano-theme-light.el'.  All the face coverage modus
+;; in that project's `nano-theme-light.el`.  All the face coverage modus
 ;; provides comes for free; the only nano-specific work is the handful of
 ;; palette entries and semantic mappings below, which reproduce nano's
 ;; restrained set of roles (critical, salient, popout, strong, faded,
 ;; subtle, highlight) where color is reserved for links, errors, and
 ;; matches, and everything else renders close to the default foreground.
+
+;;; Installation
+
+;;(use-package nano-like-modus-theme <br>
+;; :vc (:url "https://github.com/benleis1/nano-like-modus") <br>
+;; :config <br>
+;; (load-theme 'folio t))
+
+;; Sample
+;; ![sample](./screenshot.png)
 
 ;;; Code:
 

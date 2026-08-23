@@ -1,10 +1,10 @@
-# nano
 
-This theme is built on top of Modus Themes via `modus-themes-theme',
-using `modus-themes-generate-palette' to derive a full Modus-compatible
+
+This theme is built on top of Modus Themes via `modus-themes-theme`,
+using modus-themes-generate-palette to derive a full Modus-compatible
 palette from the colors used by the light ("Material") variant of
 rougier/nano-emacs (https://github.com/rougier/nano-emacs), as defined
-in that project's `nano-theme-light.el'.  All the face coverage modus
+in that project's `nano-theme-light.el`.  All the face coverage modus
 provides comes for free; the only nano-specific work is the handful of
 palette entries and semantic mappings below, which reproduce nano's
 restrained set of roles (critical, salient, popout, strong, faded,
@@ -13,20 +13,18 @@ matches, and everything else renders close to the default foreground.
 
 # Installation
 
-(use-package nano-like-modus-theme
-    :vc (:url "https://github.com/benleis1/nano-like-modus-
-    :config
-   (load-theme 'folio t))
+(use-package nano-like-modus-theme <br>
+:vc (:url "https://github.com/benleis1/nano-like-modus") <br>
+:config <br>
+(load-theme 'folio t))
 
 Sample
 ![sample](./screenshot.png)
-
 
 # Code:
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [nano](#nano)
 - [Installation](#installation)
 - [Code:](#code)
 - [nano-like-theme.el ends here](#nano-like-themeel-ends-here)
