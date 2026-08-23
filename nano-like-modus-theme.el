@@ -126,6 +126,4 @@ Follows the same shape as `modus-operandi-palette-overrides'."
 
 (provide-theme 'nano-like)
 
-(provide 'nano-like-theme)
-
-;;; nano-like-theme.el ends here
+(provide 'nano-like-modus-theme)
