@@ -16,7 +16,7 @@
 ;;(use-package nano-like-modus-theme <br>
 ;; :vc (:url "https://github.com/benleis1/nano-like-modus") <br>
 ;; :config <br>
-;; (load-theme 'folio t))
+;; (load-theme 'nano-like-modus t))
 
 ;; Sample
 ;; ![sample](./screenshot.png)
@@ -78,11 +78,13 @@
      (bg-hl-line     nano-highlight)
      (bg-region      nano-subtle)
      (fg-region      unspecified)
-     (bg-tab-bar     nano-subtle)
+
+     (bg-tab-bar     bg-inactive)
      (bg-tab-current bg-main)
-     (bg-tab-other   nano-subtle)
+     (bg-tab-other   bg-inactive)
      (bg-completion  nano-subtle)
-     (bg-hover       nano-highlight)
+     (bg-hover       mageneta-nuanced)
+     (bg-line-number-inactive bg-inactive)
 
      (bg-mode-line-active       nano-subtle)
      (fg-mode-line-active       nano-strong)
@@ -96,7 +98,7 @@
 
      (bg-paren-match nano-popout)
      (fg-paren-match nano-strong)
-     (cursor         black)
+     (cursor         bg-term-black)
 
      (bg-added   bg-yellow-subtle)
      (fg-added   yellow)
@@ -111,8 +113,8 @@ Follows the same shape as `modus-operandi-palette-overrides'."
   :link '(info-link "(modus-themes) Palette overrides"))
 
 (modus-themes-theme
- 'nano-like
- 'nano-like-themes
+ 'nano-like-modus
+ 'nano-like-modus-themes
  "A light, minimal theme with color used sparingly, modeled on rougier/nano-emacs."
  'light
  'nano-like-palette
@@ -124,6 +126,6 @@ Follows the same shape as `modus-operandi-palette-overrides'."
   (let ((dir (file-name-directory load-file-name)))
     (add-to-list 'custom-theme-load-path dir)))
 
-(provide-theme 'nano-like)
+(provide-theme 'nano-like-modus)
 
 (provide 'nano-like-modus-theme)
