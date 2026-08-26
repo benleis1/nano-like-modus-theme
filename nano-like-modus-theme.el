@@ -83,7 +83,7 @@
      (bg-tab-current bg-main)
      (bg-tab-other   bg-inactive)
      (bg-completion  nano-subtle)
-     (bg-hover       mageneta-nuanced)
+     (bg-hover       bg-magenta-nuanced)
      (bg-line-number-inactive bg-inactive)
 
      (bg-mode-line-active       nano-subtle)
