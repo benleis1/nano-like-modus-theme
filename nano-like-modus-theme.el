@@ -67,6 +67,9 @@
      (string    fg-dim)
      (docstring fg-dim)
 
+     (fg-prose-code nano-popout)
+     (fg-link link)
+
      (link         magenta)
      (link-visited magenta)
      (fg-prompt    magenta)
