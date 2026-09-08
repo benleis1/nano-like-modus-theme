@@ -13,10 +13,31 @@
 
 ;;; Installation
 
+;; ```
 ;;(use-package nano-like-modus-theme <br>
 ;; :vc (:url "https://github.com/benleis1/nano-like-modus") <br>
 ;; :config <br>
 ;; (load-theme 'nano-like-modus t))
+;; ```
+;;
+;; To deal with fonts I setup mixed-pitch
+;;
+;; ```
+;; (defvar my-nano-fixed-pitch-font "Roboto Mono for Powerline"
+;; "Fixed-pitch font family used while the nano-like theme is active.")
+;; (defvar my-nano-variable-pitch-font "Fira Code"
+;;  "Variable-pitch font family used while the nano-like theme is active.")
+;;
+;;(use-package mixed-pitch
+;;  :ensure t
+;;  :init
+;;  (set-face-attribute 'variable-pitch nil
+;;                     :font my-nano-variable-pitch-font
+;;                    :height 1.0)
+;;  (set-face-attribute 'fixed-pitch nil
+;;                     :font my-nano-fixede-pitch-font
+;;                    :height 1.0))
+;;```
 
 ;; Sample
 ;; ![sample](./screenshot.png)
